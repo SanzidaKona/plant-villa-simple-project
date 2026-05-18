@@ -1,6 +1,12 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
+import Hero from '@/components/Hero';
+import TrustBar from '@/components/TrustBar';
+import Categories from '@/components/Categories';
+import ProductShowcase from '@/components/ProductShowcase';
+import Newsletter from '@/components/Newsletter';
+import Footer from '@/components/Footer';
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -11,6 +17,7 @@ const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
 });
+
 
 export const metadata = {
   title: "plant villa",
@@ -25,10 +32,21 @@ export default function RootLayout({ children }) {
     >
       <body className="min-h-full flex flex-col">
         
-        <header className="bg-white/80 backdrop-blur-md border-b border-outline-variant/30">
-        <div className="max-w-[1280px] mx-auto px-6 py-4 flex justify-between items-center ">
+        <header className="bg-[#F4F9F4] backdrop-blur-md border-b border-outline-variant/30  ">
+        <div className=" min-h-screen">
 
           <Navbar/>
+          <main >
+          
+        <Hero />
+        <TrustBar />
+        <Categories />
+        <ProductShowcase />
+        <Newsletter />
+        
+      </main>
+      <Footer/>
+
         </div>
         </header>
         

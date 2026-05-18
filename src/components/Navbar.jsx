@@ -1,4 +1,6 @@
+"use client";
 import { Search, ShoppingCart, Moon, LayoutGrid } from 'lucide-react';
+import {motion} from 'motion/react';
 
 export default function Navbar() {
   return (
@@ -34,13 +36,18 @@ export default function Navbar() {
               <Moon className="w-6 h-6 " />
             </button>
           </div>
-           <button className=" px-6 py-2 bg-black text-white rounded cursor-pointer hover:bg-black duration-500 ">Sign In</button>
-        
+          <motion.button 
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            className="px-6 py-2 bg-black text-white rounded-lg font-semibold hover:opacity-90 transition-opacity ">
+            Sign In
+          </motion.button>
+           
          </div>
 
     </div>
     
-    </div>
+ </div>
     
     
   );
