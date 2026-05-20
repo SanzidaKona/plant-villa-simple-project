@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import { Mail, Lock, Eye, EyeOff } from 'lucide-react';
+import Link from 'next/link';
 
 export default function SignIn({ onSignInSuccess, onToggleScreen, onGuestBypass }) {
   const [email, setEmail] = useState('');
@@ -190,14 +191,13 @@ export default function SignIn({ onSignInSuccess, onToggleScreen, onGuestBypass 
             <div className="space-y-3">
               <p className="text-center text-sm text-[#424843]">
                 Don’t have an account?{' '}
-                <button 
-                  type="button"
-                  onClick={() => onToggleScreen('signup')}
-                  className="text-emerald-700 font-bold hover:underline cursor-pointer"
-                >
-                  Join the Villa
-                </button>
-              </p>
+              <Link 
+               href="/signup" 
+               className="text-emerald-700 font-bold hover:underline cursor-pointer inline-block"
+    >
+               Join the Villa
+               </Link>
+               </p>
               
               <div className="flex justify-center">
                 <button 
