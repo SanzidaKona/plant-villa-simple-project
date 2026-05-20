@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import { useRouter } from 'next/navigation';
+import { Mail, Lock, Eye, EyeOff } from 'lucide-react';
 import Link from 'next/link';
 
 
@@ -38,12 +39,12 @@ export default function SignUp({ onSignUpSuccess }) {
       joinedAt: new Date().toISOString(),
     };
 
-    // যদি প্যারেন্ট থেকে কোনো সাকসেস ফাংশন পাঠানো হয়ে থাকে
+    
     if (onSignUpSuccess) {
       onSignUpSuccess(user);
     } else {
       alert(`Account successfully created for ${user.name}!`);
-      router.push('/signin'); // রেজিস্ট্রেশন শেষে সাইন-ইন পেজে নিয়ে যাবে
+      router.push('/signin'); 
     }
   };
 
@@ -132,15 +133,13 @@ export default function SignUp({ onSignUpSuccess }) {
                   placeholder="••••••••"
                   className="w-full px-4 py-2.5 bg-[#ffffff] border border-[#c3c8c2] focus:border-[#4a654f] focus:ring-1 focus:ring-[#4a654f]/20 rounded-lg transition-all outline-none text-[#191c1b] font-sans pr-10"
                 />
-                <button
-                  type="button"
-                  onClick={() => setShowPassword(!showPassword)}
-                  className="absolute right-3 top-1/2 -translate-y-1/2 text-outline hover:text-on-[#424843] transition-colors flex items-center justify-center"
-                >
-                  <span className="material-symbols-outlined text-[20px]">
-                    {showPassword ? 'visibility_off' : 'visibility'}
-                  </span>
-                </button>
+                <button 
+                    type="button"
+                    onClick={() => setShowPassword(!showPassword)}
+                    className="absolute inset-y-0 right-0 pr-3 flex items-center text-[#737873] cursor-pointer"
+                  >
+                    {showPassword ? <EyeOff size={16} /> : <Eye size={16} />}
+                  </button>
               </div>
             </div>
 
