@@ -1,6 +1,7 @@
 "use client";
 import { Search, ShoppingCart, Moon, LayoutGrid } from 'lucide-react';
 import {motion} from 'motion/react';
+import Link from 'next/link';
 
 export default function Navbar() {
   return (
@@ -8,13 +9,25 @@ export default function Navbar() {
       <div className="max-w-[1280px] mx-auto px-6 py-4 flex flex-col md:flex-row justify-between items-center bg-transparent ] ">
          <div className="flex items-center space-x-8">
           <span className="font-display text-4xl text-black text-primary  font-bold">Plant Villa</span>
-         <div className="hidden lg:flex space-x-6 text-[#08080880] ">
-         <a className="font-sans text-base text-primary   border-primary" href="#">Home</a>
-         <a className="font-sans text-base text-on-surface/70 hover:text-primary transition-colors" href="#">Shop</a>
-         <a className="font-sans text-base text-on-surface/70 hover:text-primary transition-colors" href="#">Terms & Conditions</a>
-         <a className="font-sans text-base text-on-surface/70 hover:text-primary transition-colors" href="#">Contact</a>
-         
-      </div>
+         <div className="hidden lg:flex space-x-6 text-[#08080880]">
+            
+            <Link className=" text-base text-[#05190e]/70 hover:text-[#05190e] font-bold transition-colors border-b-2  " href="/">
+              Home
+            </Link>
+          
+            <Link className=" text-base text-[#191c1b]/70 hover:text-[#05190e] font-bold transition-colors " href="/shop">
+              Shop
+            </Link>
+            
+            <Link className=" text-base text-[#191c1b]/70 hover:text-[#05190e] font-bold transition-colors" href="#">
+              Terms & Conditions
+            </Link>
+            
+            <Link className=" text-base text-[#191c1b]/70 hover:text-[#05190e] font-bold y transition-colors" href="#">
+              Contact
+            </Link>
+          </div>
+      
          </div>
          <div className="flex items-center space-x-4 mt-4 md:mt-0 ">
          
