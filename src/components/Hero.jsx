@@ -15,8 +15,8 @@ export default function Hero() {
         className="bg-[#E8F5E9] rounded-2xl overflow-hidden flex flex-col md:flex-row items-center shadow-botanical"
       >
         <div className="w-full md:w-1/2 p-12 md:p-16 lg:p-24 space-y-6">
-          <p className="text-[#08080880]  text-xs font-bold text-secondary uppercase tracking-[0.2em]">Fresh nursery stock this week</p>
-          <h1 className="text-black font-display text-5xl lg:text-6xl text-primary leading-tight font-bold ">
+          <p className="font-sans text-[#08080880]  text-xs font-bold text-secondary uppercase tracking-[0.2em]">Fresh nursery stock this week</p>
+          <h1 className="font-serif text-black font-display text-5xl lg:text-6xl text-primary leading-tight font-bold ">
             Bring Home Fruit Trees That Grow With Your Family
           </h1>
           <div className=" flex flex-col items-start gap-5 pt-4">

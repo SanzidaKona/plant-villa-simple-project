@@ -7,8 +7,8 @@ export default function Newsletter() {
     <section className="max-w-[1280px] mx-auto px-6 py-12">
       <div className="bg-[#05190e] p-12 md:p-24 rounded-2xl text-center space-y-8 relative overflow-hidden">
         <div className="relative z-10">
-          <h2 className="font-display text-4xl lg:text-5xl text-[#ffffff] font-bold">Join the Plant Villa Circle</h2>
-          <p className="text-[#ffffff]/70 max-w-xl mx-auto text-lg">
+          <h2 className="font-serif font-display text-4xl lg:text-5xl text-[#ffffff] font-bold">Join the Plant Villa Circle</h2>
+          <p className="font-sans text-[#ffffff]/70 max-w-xl mx-auto text-lg">
             Receive curated care guides, early access to rare drops, and botanical inspiration for your home.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center mt-8 max-w-lg mx-auto">

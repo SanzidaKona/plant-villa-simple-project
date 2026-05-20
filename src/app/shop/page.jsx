@@ -62,9 +62,9 @@ export default function shop() {
       {/* Top Navigation Bar */}
       <header className="sticky top-0 w-full z-50 bg-[#eceeec]/80 backdrop-blur-md border-b border-[#c3c8c2]/30">
         <div className="max-w-[1280px] mx-auto px-6 py-4 flex flex-col md:flex-row justify-between items-center">
-          <div className="font-display text-4xl text-[#05190e] font-bold mb-4 md:mb-0">Plant Villa</div>
+          <div className="font-serif font-display text-4xl text-[#05190e] font-bold mb-4 md:mb-0">Plant Villa</div>
           
-          <nav className="flex gap-6 overflow-x-auto pb-2 md:pb-0 w-full md:w-auto scrollbar-hide">
+          <nav className="font-sans flex gap-6 overflow-x-auto pb-2 md:pb-0 w-full md:w-auto scrollbar-hide">
             <Link href="/" className="text-base text-[#05190e]/70 hover:text-[#05190e] font-bold transition-colors">
               Home
             </Link>
@@ -91,7 +91,7 @@ export default function shop() {
               />
             </div>
             
-            <div className="flex items-center gap-2">
+            <div className="font-sans flex items-center gap-2">
               <button className="p-2 hover:bg-[#f2f4f2] rounded-full transition-colors lg:hidden">
                 <Search className="w-5 h-5" />
               </button>
@@ -103,10 +103,11 @@ export default function shop() {
                 {darkMode ? <Sun className="w-5 h-5 text-yellow-400" /> : <Moon className="w-5 h-5" />}
               </button>
             </div>
-            
-            <button className="ml-2 font-bold uppercase tracking-widest text-[11px] text-[#ffffff] bg-[#05190e] px-6 py-3 rounded-lg hover:opacity-90 transition-all active:scale-95 shadow-lg shadow-[#05190e]/10">
+           <Link href="/signin">
+            <button className=" font-sans ml-2 font-bold uppercase tracking-widest text-[11px] text-[#ffffff] bg-[#05190e] px-6 py-3 rounded-lg hover:opacity-90 transition-all active:scale-95 shadow-lg shadow-[#05190e]/10">
               Sign In
             </button>
+          </Link>
           </div>
         </div>
       </header>
@@ -118,7 +119,7 @@ export default function shop() {
           {/* Sidebar Filters */}
           <aside className="w-full lg:w-64 flex-shrink-0 space-y-12">
             <div>
-              <h3 className="text-lg font-bold text-[#05190e] mb-6">Categories</h3>
+              <h3 className="font-serif text-lg font-bold text-[#05190e] mb-6">Categories</h3>
               <div className="space-y-4">
                 {CATEGORIES.map((cat) => (
                   <label key={cat} className="flex items-center gap-3 cursor-pointer group">
@@ -141,7 +142,7 @@ export default function shop() {
 
             <div>
               <div className="flex justify-between items-center mb-6">
-                <h3 className="text-lg font-bold text-[#05190e]">Price Range</h3>
+                <h3 className="font-serif text-lg font-bold text-[#05190e]">Price Range</h3>
                 <span className="text-sm font-bold text-[#4a654f]">${priceRange}</span>
               </div>
               <input 
@@ -158,7 +159,7 @@ export default function shop() {
                 </div>
 
             <div className="pt-8 border-t border-[#c3c8c2]/30">
-              <h3 className="text-lg font-bold text-[#05190e] mb-6">Plant Features</h3>
+              <h3 className="font-serif text-lg font-bold text-[#05190e] mb-6">Plant Features</h3>
               <div className="flex flex-wrap gap-2">
                 {FEATURES.map((tag) => (
                   <span 
@@ -181,10 +182,10 @@ export default function shop() {
           <section className="flex-grow">
             <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-12 gap-4">
               <div>
-                <h1 className="font-display text-5xl text-[#05190e] font-bold mb-2">All Plants</h1>
-                <p className="text-sm text-[#424843] font-medium">Showing 48 exquisite specimens</p>
+                <h1 className="font-serif font-display text-5xl text-[#05190e] font-bold mb-2">All Plants</h1>
+                <p className="font-sans text-sm text-[#424843] font-medium">Showing 48 exquisite specimens</p>
               </div>
-              <div className="flex items-center gap-4">
+              <div className=" font-sans flex items-center gap-4">
                 <span className="text-xs font-bold uppercase tracking-widest text-[#424843]">Sort by:</span>
                 <select className="bg-transparent border-none text-sm font-bold text-[#05190e] focus:ring-0 cursor-pointer outline-none">
                   <option>Newest Arrivals</option>
@@ -208,7 +209,7 @@ export default function shop() {
             </motion.div>
 
             {filteredProducts.length === 0 && (
-              <div className="text-center py-24">
+              <div className=" font-sans text-center py-24">
                 <p className="text-xl text-stone-500">No plants found matching the selected filters.</p>
               </div>
             )}
@@ -233,8 +234,8 @@ export default function shop() {
       <footer className="w-full mt-24 bg-[#e1e3e1]">
         <div className="max-w-[1280px] mx-auto px-6 py-20 flex flex-wrap justify-between gap-12">
           <div className="w-full md:w-1/3 mb-12 md:mb-0">
-            <div className="font-display text-4xl text-[#05190e] font-bold mb-6">Plant Villa</div>
-            <p className="text-[#424843] text-sm leading-relaxed max-w-sm mb-8">
+            <div className="font-serif font-display text-4xl text-[#05190e] font-bold mb-6">Plant Villa</div>
+            <p className="font-sans text-[#424843] text-sm leading-relaxed max-w-sm mb-8">
               Bringing nature's silent poetry into your living space. We curate only the finest botanical specimens for the discerning home.
             </p>
             <div className="flex gap-4">
@@ -252,7 +253,7 @@ export default function shop() {
 
           <div className="flex flex-wrap gap-12 lg:gap-24">
             <div className="space-y-6">
-              <h4 className="font-bold uppercase text-xs tracking-[0.2em] text-[#191c1b]">Shop</h4>
+              <h4 className="font-sans font-bold uppercase text-xs tracking-[0.2em] text-[#191c1b]">Shop</h4>
               <nav className="flex flex-col gap-3">
                 {['All Plants', 'Bestsellers', 'Gift Cards', 'Care Kits'].map(link => (
                   <a key={link} href="#" className="text-[#424843] hover:text-[#4a654f] transition-colors text-sm font-medium">{link}</a>
@@ -261,7 +262,7 @@ export default function shop() {
             </div>
             
             <div className="space-y-6">
-              <h4 className="font-bold uppercase text-xs tracking-[0.2em] text-[#191c1b]">Support</h4>
+              <h4 className="font-sans font-bold uppercase text-xs tracking-[0.2em] text-[#191c1b]">Support</h4>
               <nav className="flex flex-col gap-3">
                 {['About Us', 'Shipping Policy', 'Returns', 'Privacy Policy'].map(link => (
                   <a key={link} href="#" className="text-[#424843] hover:text-[#4a654f] transition-colors text-sm font-medium">{link}</a>
@@ -270,7 +271,7 @@ export default function shop() {
             </div>
 
             <div className="space-y-6">
-              <h4 className="font-bold uppercase text-xs tracking-[0.2em] text-[#191c1b]">Newsletter</h4>
+              <h4 className="font-sans font-bold uppercase text-xs tracking-[0.2em] text-[#191c1b]">Newsletter</h4>
               <p className="text-sm text-[#424843] max-w-[240px]">Get growth tips and early access to rare editions.</p>
               <div className="flex">
                 <input 
@@ -286,8 +287,8 @@ export default function shop() {
           </div>
 
           <div className="w-full pt-12 mt-12 border-t border-[#c3c8c2]/30 text-center">
-            <p className="text-[#424843] text-[11px] font-bold uppercase tracking-[0.3em]">
-              © 2024 Plant Villa. Botanical Luxury for Every Home.
+            <p className="font-serif text-[#424843] text-[11px] font-bold uppercase tracking-[0.3em]">
+              © 2026 Plant Villa. Botanical Luxury for Every Home.
             </p>
           </div>
         </div>

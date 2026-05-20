@@ -42,9 +42,9 @@ export default function ProductShowcase() {
   return (
     <section className="bg-[#f2f4f2] py-12 ">
       <div className="max-w-[1280px] mx-auto px-6">
-        <div className="text-center mb-12">
-          <h2 className="font-display text-4xl  font-bold text-black">Popular Trees</h2>
-          <div className="flex justify-center gap-2 mt-4">
+        <div className="font-serif text-center mb-12">
+          <h2 className="  font-display text-4xl  font-bold text-black">Popular Trees</h2>
+          <div className="font-sans flex justify-center gap-2 mt-4">
             <span className="px-5 py-2 bg-[#05190e] bg-on-[#ffffff] rounded-full text-sm font-medium cursor-pointer">All</span>
             <span className="px-5 py-2 bg-[#e1e3e1] text-[#08080880] rounded-full text-sm font-medium hover:bg-[#c9e7cc]  transition-colors cursor-pointer">Indoor</span>
             <span className="px-5 py-2 bg-[#e1e3e1] text-[#08080880] rounded-full text-sm font-medium hover:bg-[#c9e7cc]  transition-colors cursor-pointer">Fruit Bearing</span>

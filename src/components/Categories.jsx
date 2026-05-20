@@ -29,17 +29,17 @@ export default function Categories() {
     <section className="max-w-[1280px] mx-auto px-6 py-12  ">
       <div className="flex justify-between items-end mb-8">
         <div>
-          <p className=" text-xs font-bold  mb-1 text-[#4a654f]">Curated Collections</p>
-          <h2 className="font-display text-3xl text-[#05190e] ">Find Your Green Companion</h2>
+          <p className="font-sans text-xs font-bold  mb-1 text-[#4a654f]">Curated Collections</p>
+          <h2 className="font-serif font-bold font-display text-3xl text-[#05190e] ">Find Your Green Companion</h2>
         </div>
-        <a className="  border-b border-[#4a654f]  pb-1 text-[#4a654f] font-semibold" href="#">View all categories</a>
+        <a className=" font-sans border-b border-[#4a654f]  pb-1 text-[#4a654f] font-semibold" href="#">View all categories</a>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
+      <div className=" grid grid-cols-1 md:grid-cols-4 gap-6">
         {CATEGORIES.map((cat, i) => (
           <motion.div 
             key={i}
             whileHover={{ scale: 1.02 }}
-            className={`${cat.span} relative group overflow-hidden rounded-xl h-80 shadow-botanical cursor-pointer`}
+            className={`${cat.span}  relative group overflow-hidden rounded-xl h-80 shadow-botanical cursor-pointer`}
           >
             <img 
               alt={cat.title} 
@@ -48,11 +48,11 @@ export default function Categories() {
               referrerPolicy="no-referrer"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent flex flex-col justify-end p-6">
-              <h3 className="text-white font-display text-2xl font-bold">{cat.title}</h3>
-              {cat.desc && <p className="text-white/80  text-sm">{cat.desc}</p>}
+              <h3 className="font-serif text-white font-display text-2xl font-bold">{cat.title}</h3>
+              {cat.desc && <p className="font-sans text-white/80  text-sm">{cat.desc}</p>}
             </div>
             <div className="absolute inset-0 bg-[#05190e]/20 opacity-0  group-hover:opacity-100 transition-opacity flex items-center justify-center">
-              <span className="bg-white  px-6 py-3 rounded-full font-bold shadow-lg text-black">Explore Collection</span>
+              <span className="font-serif bg-white  px-6 py-3 rounded-full font-bold shadow-lg text-black">Explore Collection</span>
             </div>
           </motion.div>
         ))}

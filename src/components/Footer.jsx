@@ -9,11 +9,11 @@ export default function Footer() {
         <div className="w-full lg:w-1/3 space-y-6">
           <span 
             style={{ fontFamily: "" }} 
-            className="font-display text-4xl text-[#05190e] font-bold"
+            className="font-serif font-display text-4xl text-[#05190e] font-bold"
           >
             Plant Villa
           </span>
-          <p className="text-sm text-[#191c1b]/60 max-w-xs leading-relaxed">
+          <p className="font-sans text-sm text-[#191c1b]/60 max-w-xs leading-relaxed">
             Elevating interior spaces with premium, hand-selected botanical specimens. Professional care delivered to your door.
           </p>
           
@@ -47,7 +47,7 @@ export default function Footer() {
         
         <div className="flex gap-16 flex-wrap">
           <div className="space-y-4">
-            <h5 className="font-sans text-xs font-bold text-[#05190e] uppercase tracking-widest">Company</h5>
+            <h5 className="font-sans text-xs font-bold text-[#05190e] uppercase tracking-widest">COMPANY</h5>
             <ul className="space-y-2">
               <li><a className="text-sm text-[#191c1b]/60 hover:text-[#4a654f] transition-colors" href="#">About Us</a></li>
               <li><a className="text-sm text-[#191c1b]/60 hover:text-[#4a654f] transition-colors" href="#">Sustainability</a></li>
@@ -57,7 +57,7 @@ export default function Footer() {
           </div>
           
           <div className="space-y-4">
-            <h5 className="font-sans text-xs font-bold text-[#05190e] uppercase tracking-widest">Customer Care</h5>
+            <h5 className="font-sans text-xs font-bold text-[#05190e] uppercase tracking-widest">CUSTOMER CARE</h5>
             <ul className="space-y-2">
               <li><a className="text-sm text-[#191c1b]/60 hover:text-[#4a654f] transition-colors" href="#">Shipping Policy</a></li>
               <li><a className="text-sm text-[#191c1b]/60 hover:text-[#4a654f] transition-colors" href="#">Returns</a></li>
@@ -67,7 +67,7 @@ export default function Footer() {
           </div>
           
           <div className="space-y-4">
-            <h5 className="font-sans text-xs font-bold text-[#05190e] uppercase tracking-widest">Privacy</h5>
+            <h5 className="font-sans text-xs font-bold text-[#05190e] uppercase tracking-widest">PRIVACY</h5>
             <ul className="space-y-2">
               <li><a className="text-sm text-[#191c1b]/60 hover:text-[#4a654f] transition-colors" href="#">Privacy Policy</a></li>
               <li><a className="text-sm text-[#191c1b]/60 hover:text-[#4a654f] transition-colors" href="#">Newsletter</a></li>
@@ -78,7 +78,7 @@ export default function Footer() {
       </div>
       
       <div className="max-w-[1280px] mx-auto px-6 py-6 border-t border-[#c3c8c2]/30 flex flex-col md:flex-row justify-between items-center gap-4">
-        <p className=" text-[10px] text-[#191c1b]/50 uppercase tracking-[0.2em]">
+        <p className="font-serif text-[10px] text-[#191c1b]/50 uppercase tracking-[0.2em]">
           © 2026 Plant Villa. Botanical Luxury for Every Home.
         </p>
         <div className="flex items-center space-x-4 opacity-40 grayscale invert">
