@@ -7,7 +7,7 @@ const HERO_IMAGE = "https://lh3.googleusercontent.com/aida-public/AB6AXuDo9Yf8M8
 
 export default function Hero() {
   return (
-    <section className="max-w-[1280px] mx-auto flex justify-between px-6 py-12 border-2 ">
+    <section className="max-w-[1280px] mx-auto flex justify-between px-6 py-12  ">
       <motion.div 
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -15,20 +15,20 @@ export default function Hero() {
         className="bg-[#E8F5E9] rounded-2xl overflow-hidden flex flex-col md:flex-row items-center shadow-botanical"
       >
         <div className="w-full md:w-1/2 p-12 md:p-16 lg:p-24 space-y-6">
-          <p className="font-sans text-[#08080880]  text-xs font-bold text-secondary uppercase tracking-[0.2em]">Fresh nursery stock this week</p>
-          <h1 className="font-serif text-black font-display text-5xl lg:text-6xl text-primary leading-tight font-bold ">
+          <p className="font-sans text-[#08080880]  text-xs font-bold text-[#4a654f] uppercase tracking-[0.2em]">Fresh nursery stock this week</p>
+          <h1 className="font-serif  font-display text-5xl lg:text-6xl text-[#05190e] leading-tight font-bold ">
             Bring Home Fruit Trees That Grow With Your Family
           </h1>
           <div className=" flex flex-col items-start gap-5 pt-4">
             <motion.button 
               whileHover={{ y: -2 }}
-              className="px-8 py-4 bg-primary text-on-primary rounded-lg font-semibold shadow-botanical bg-black text-white"
+              className="px-8 py-4 bg-[#05190e] text-[#ffffff] rounded-lg font-semibold shadow-botanical  "
             >
               Shop Plants
             </motion.button>
-            <button className="px-8 py-4 text-primary font-semibold flex items-center group text-black">
+            <button className="px-8 py-4 text-[#05190e] font-semibold flex items-center group ">
               Browse Catalog 
-              <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform text-black" />
+              <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform " />
             </button>
           </div>
         </div>

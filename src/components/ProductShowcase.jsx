@@ -44,8 +44,8 @@ export default function ProductShowcase() {
       <div className="max-w-[1280px] mx-auto px-6">
         <div className="font-serif text-center mb-12">
           <h2 className="  font-display text-4xl  font-bold text-black">Popular Trees</h2>
-          <div className="font-sans flex justify-center gap-2 mt-4">
-            <span className="px-5 py-2 bg-[#05190e] bg-on-[#ffffff] rounded-full text-sm font-medium cursor-pointer">All</span>
+          <div className="font-sans flex justify-center gap-2 mt-4 ">
+            <span className="px-5 py-2 bg-[#034721] bg-on-[#ffffff]  rounded-full text-sm font-medium cursor-pointer">All</span>
             <span className="px-5 py-2 bg-[#e1e3e1] text-[#08080880] rounded-full text-sm font-medium hover:bg-[#c9e7cc]  transition-colors cursor-pointer">Indoor</span>
             <span className="px-5 py-2 bg-[#e1e3e1] text-[#08080880] rounded-full text-sm font-medium hover:bg-[#c9e7cc]  transition-colors cursor-pointer">Fruit Bearing</span>
           </div>
@@ -55,7 +55,7 @@ export default function ProductShowcase() {
             <motion.div 
               key={i}
               whileHover={{ y: -4 }}
-              className="bg-[#f8faf8] p-2 rounded-2xl border border-outline-variant/30 shadow-botanical hover:shadow-botanical-hover transition-all"
+              className="bg-[#f8faf8] p-2 rounded-2xl  border-outline-variant/30 shadow-botanical hover:shadow-botanical-hover transition-all"
             >
               <div className="aspect-square rounded-xl overflow-hidden bg-[#f8faf8] mb-4">
                 <img 

@@ -5,7 +5,7 @@ import Link from 'next/link';
 
 export default function Navbar() {
   return (
-    <div className="sticky top-0 w-full z-50 bg-white/80 backdrop-blur-md border-b border-outline-variant/30">
+    <div className="sticky top-0 w-full z-50 bg-white/80 backdrop-blur-md  border-outline-variant/30">
       <div className="max-w-[1280px] mx-auto px-6 py-4 flex flex-col md:flex-row justify-between items-center bg-transparent ] ">
          <div className="flex items-center space-x-8">
           <span className="font-serif font-display text-4xl text-black text-primary  font-bold">Plant Villa</span>
@@ -19,7 +19,7 @@ export default function Navbar() {
               Shop
             </Link>
             
-            <Link className="font-sans text-base text-[#191c1b]/70 hover:text-[#05190e] font-bold transition-colors" href="#">
+            <Link className="font-sans text-base text-[#191c1b]/70 hover:text-[#05190e] font-bold transition-colors" href="/terms">
               Terms & Conditions
             </Link>
             

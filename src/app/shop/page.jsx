@@ -71,7 +71,7 @@ export default function shop() {
             <Link href="/shop" className="text-base text-[#05190e]/70 hover:text-[#05190e] font-bold transition-colors border-b-2">
               Shop
             </Link>
-            <Link href="#" className="text-base text-[#05190e]/70 hover:text-[#05190e] font-bold transition-colors">
+            <Link href="/terms" className="text-base text-[#05190e]/70 hover:text-[#05190e] font-bold transition-colors">
               Terms & Conditions
             </Link>
             <Link href="#" className="text-base text-[#05190e]/70 hover:text-[#05190e] font-bold transition-colors">
