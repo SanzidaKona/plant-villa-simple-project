@@ -23,7 +23,7 @@ export default function Navbar() {
               Terms & Conditions
             </Link>
             
-            <Link className="font-sans text-base text-[#191c1b]/70 hover:text-[#05190e] font-bold y transition-colors" href="#">
+            <Link className="font-sans text-base text-[#191c1b]/70 hover:text-[#05190e] font-bold y transition-colors" href="/contact">
               Contact
             </Link>
           </div>
