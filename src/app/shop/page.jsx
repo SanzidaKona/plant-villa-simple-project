@@ -1,5 +1,6 @@
 'use client';
 
+
 import { useState, useEffect, useMemo } from 'react';
 import { Search, ShoppingCart, Moon, Sun, ChevronLeft, ChevronRight, CheckCircle2, ArrowRight,Mail,MessageCircle,Heart } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';

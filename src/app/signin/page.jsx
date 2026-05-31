@@ -12,7 +12,7 @@ export default function SigninPage() {
 
   const handleSignInSuccess = (userData) => {
     alert(`Welcome back, ${userData.name}!`);
-    router.push('/'); 
+    router.push('/trending'); 
   };
 
   const handleToggleScreen = (screen) => {
@@ -22,7 +22,7 @@ export default function SigninPage() {
   };
 
   const handleGuestBypass = () => {
-    router.push('/');
+    router.push('/trending');
   };
 
   return (
